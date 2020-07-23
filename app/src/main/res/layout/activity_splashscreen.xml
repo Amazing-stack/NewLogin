@@ -4,14 +4,13 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background=
     tools:context=".Splashscreen">
 
 
     <ImageView
         android:id="@+id/imageView"
-        android:layout_width="356dp"
-        android:layout_height="270dp"
+        android:layout_width="348dp"
+        android:layout_height="302dp"
         android:layout_marginStart="17dp"
         android:layout_marginLeft="17dp"
         android:layout_marginEnd="17dp"
@@ -23,31 +22,33 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView" />
 
-    <TextView
+    <Button
         android:id="@+id/textView"
         android:layout_width="272dp"
         android:layout_height="0dp"
         android:layout_marginTop="105dp"
         android:layout_marginBottom="53dp"
-        android:background="@color/common_google_signin_btn_text_dark_disabled"
         android:fontFamily="@font/bangers"
         android:gravity="center"
         android:text="Register"
-        android:textColor="@color/bottomNavigationBackground"
-        android:textSize="24sp"
+        android:background="@drawable/centre_background"
+        android:textColor="#2471A3"
+        android:textSize="30sp"
         app:layout_constraintBottom_toTopOf="@+id/imageView"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <TextView
+    <Button
         android:id="@+id/textView2"
         android:layout_width="248dp"
         android:layout_height="0dp"
         android:layout_marginBottom="41dp"
-        android:background="@color/common_google_signin_btn_text_dark_disabled"
+      android:textColor="#2471A3"
         android:gravity="center"
+        android:background="@drawable/centre_background"
         android:text="Sign Up"
-        android:textSize="24sp"
+        android:fontFamily="@font/bangers"
+        android:textSize="30sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView" />
