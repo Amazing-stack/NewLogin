@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/black"
+    tools:context=".DashboardActivity">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/newcolor">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="300dp"
+                    android:adjustViewBounds="true"
+                    android:elevation="10dp"
+                    android:src="@drawable/hero" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:baselineAligned="false">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginRight="10dp"
+                    android:orientation="vertical">
+
+                    <com.google.android.material.card.MaterialCardView
+                        android:id="@+id/createreport"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="8dp"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:checkable="true"
+                        android:elevation="20dp"
+                        app:cardPreventCornerOverlap="true"
+                        android:layout_marginTop="30dp"
+                        android:layout_marginStart="8dp">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:minHeight="150dp"
+                            android:padding="10dp">
+
+                            <ImageView
+                                style="@style/homeCardImage"
+                                android:maxHeight="90dp"
+                                android:src="@drawable/uiux" />
+
+                            <TextView
+                                android:id="@+id/textViewSub1Title"
+                                android:layout_width="wrap_content"
+                                android:layout_height="66dp"
+                                android:text="Create \nreport"
+                                android:textAppearance="?attr/textAppearanceHeadline6"
+                                android:textColor="@android:color/black" />
+
+                        </RelativeLayout>
+                    </com.google.android.material.card.MaterialCardView>
+
+                    <com.google.android.material.card.MaterialCardView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:elevation="12dp"
+                        android:layout_marginLeft="8dp"
+                        android:background="@android:color/white"
+                        app:cardPreventCornerOverlap="true"
+                        android:layout_marginTop="40dp">
+
+                        <RelativeLayout
+                            android:layout_width="196dp"
+                            android:layout_height="match_parent"
+                            android:minHeight="150dp"
+                            android:padding="10dp">
+
+                            <ImageView
+                                style="@style/homeCardImage"
+                                android:maxHeight="100dp"
+                                android:src="@drawable/manage" />
+
+                            <TextView
+                                android:id="@+id/textViewSub1Title2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="61dp"
+                                android:text="Search "
+                                android:textAppearance="?attr/textAppearanceHeadline6"
+                                android:textColor="@android:color/black" />
+
+
+                        </RelativeLayout>
+                    </com.google.android.material.card.MaterialCardView>
+
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="10dp"
+                    android:orientation="vertical">
+
+
+                    <com.google.android.material.card.MaterialCardView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:cardPreventCornerOverlap="true"
+                        android:layout_marginRight="8dp"
+                        android:layout_marginTop="30dp">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:minHeight="150dp"
+                            android:padding="10dp">
+
+                            <ImageView
+                                android:maxHeight="90dp"
+                                android:src="@drawable/view"
+                                style="@style/homeCardImage"/>
+
+                            <TextView
+                                android:id="@+id/textViewSub2Title"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="View \nreports"
+                                android:textAppearance="?attr/textAppearanceHeadline6"
+                                android:textColor="@android:color/black" />
+
+                        </RelativeLayout>
+                    </com.google.android.material.card.MaterialCardView>
+
+
+                    <com.google.android.material.card.MaterialCardView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:cardPreventCornerOverlap="true"
+                        android:layout_marginRight="8dp"
+                        android:layout_marginTop="40dp">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:minHeight="150dp"
+                            android:padding="10dp">
+
+                            <ImageView
+                                style="@style/homeCardImage"
+                                android:layout_width="103dp"
+                                android:layout_height="80dp"
+                                android:maxHeight="90dp"
+                                android:src="@drawable/search" />
+
+                            <TextView
+                                android:id="@+id/textViewSub4Title"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Manage\nprofile"
+                                android:textAppearance="?attr/textAppearanceHeadline6"
+                                android:textColor="@android:color/black" />
+
+
+                        </RelativeLayout>
+                    </com.google.android.material.card.MaterialCardView>
+
+                </LinearLayout>
+            </LinearLayout>
+
+
+
+
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

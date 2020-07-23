@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:orientation="vertical">
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/textInputLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="34dp"
+                android:layout_marginTop="230dp"
+                android:layout_marginBottom="1dp"
+                android:background="#3498DB"
+                android:fontFamily="@font/coustard_black"
+                android:text="  2. Offence"
+                android:textColor="@color/design_default_color_on_primary"
+                android:textSize="18sp" />
+
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_marginTop="20dp"
+                android:layout_width="match_parent"
+                android:textSize="18dp"
+                android:layout_height="wrap_content"
+                android:text="  Select type of report"/>
+
+
+            <Spinner
+                android:id="@+id/spinner1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:entries="@array/Personnal_crime"
+                android:popupBackground="@drawable/centre_button"
+                android:prompt="@string/select_prompt" />
+
+            <Spinner
+                android:id="@+id/spinner2"
+                android:layout_marginTop="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/inputdate"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:hint="Date of crime"
+            app:boxStrokeColor="?attr/colorSecondary"
+            app:endIconMode="clear_text"
+            app:endIconTint="@color/colorAccent"
+            app:errorEnabled="true"
+            app:hintTextColor="@color/design_default_color_secondary_variant"
+            app:startIconDrawable="@drawable/ic_baseline_date_range_24">
+
+
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/in_date"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/black"
+                android:textColorHighlight="@color/design_default_color_secondary"
+                />
+
+            <Button
+                android:id="@+id/btn_date"
+                style="?attr/materialButtonOutlinedStyle"
+                android:layout_width="125dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/centre_background"
+                android:fontFamily="sans-serif-black"
+                android:text="Select Date"
+                android:textColor="@android:color/white" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            app:endIconMode="clear_text"
+            app:endIconTint="@color/colorAccent"
+            app:hintTextColor="@color/design_default_color_secondary_variant"
+            app:startIconDrawable="@drawable/ic_baseline_access_time_24"
+            android:layout_marginTop="20dp"
+            app:errorEnabled="true">
+
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/in_time"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Time of Crime "
+                android:inputType="phone" />
+
+            <Button
+                android:id="@+id/btn_time"
+                android:layout_width="129dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/centre_background"
+                android:text="SELECT TIME"
+                android:textColor="@android:color/white" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_marginTop="20dp"
+            app:endIconMode="clear_text"
+            app:endIconTint="@color/colorAccent"
+            app:helperText="@string/details"
+            app:hintTextColor="@color/design_default_color_secondary_variant"
+            app:startIconDrawable="@drawable/ic_baseline_date_range_24"
+            app:errorEnabled="true">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-black"
+                android:hint="Details of incident"
+                android:inputType="text"
+                android:lines="8" />
+        </com.google.android.material.textfield.TextInputLayout>
+        <DatePicker
+            android:id="@+id/datePicker1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:calendarViewShown="false" />
+    </LinearLayout>
+
+
+</androidx.core.widget.NestedScrollView>
