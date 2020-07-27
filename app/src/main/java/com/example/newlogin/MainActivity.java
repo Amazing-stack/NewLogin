@@ -13,6 +13,9 @@ import android.widget.ProgressBar;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.github.ybq.android.spinkit.sprite.Sprite;
+import com.github.ybq.android.spinkit.style.ChasingDots;
+import com.github.ybq.android.spinkit.style.Wave;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 import com.google.android.material.textfield.TextInputEditText;
@@ -30,6 +33,7 @@ public class MainActivity extends AppCompatActivity {
     private ProgressBar progressbar;
     public static final String TAG = "CRM";
     private FirebaseUser user;
+    private ProgressBar pbar;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -41,6 +45,7 @@ public class MainActivity extends AppCompatActivity {
         mEmail = findViewById(R.id.email);
         mPassword =  findViewById(R.id.password);
         forp = findViewById(R.id.forgotpswd);
+        pbar = findViewById(R.id.p_Bar);
 
         mAuth = FirebaseAuth.getInstance();
 
@@ -57,6 +62,8 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(new Intent(MainActivity.this, RegisterActivity.class));
             }
         });
+
+        pbar.setVisibility(View.VISIBLE);
 
         mSignIn.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -88,7 +95,7 @@ public class MainActivity extends AppCompatActivity {
                                     Toast.makeText(MainActivity.this, "Your email is not verified.",
                                             Toast.LENGTH_SHORT).show();
 
-
+                                    pbar.setVisibility(View.GONE);
                                 }
 
                             }
@@ -100,6 +107,9 @@ public class MainActivity extends AppCompatActivity {
                 }
 
             });
+
+        Sprite chasingDots = new ChasingDots();
+        pbar.setIndeterminateDrawable(chasingDots);
 
     }
 }

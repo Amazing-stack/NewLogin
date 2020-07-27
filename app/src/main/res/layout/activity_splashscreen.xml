@@ -9,48 +9,65 @@
 
     <ImageView
         android:id="@+id/imageView"
-        android:layout_width="348dp"
-        android:layout_height="302dp"
-        android:layout_marginStart="17dp"
-        android:layout_marginLeft="17dp"
-        android:layout_marginEnd="17dp"
-        android:layout_marginRight="17dp"
-        android:layout_marginBottom="160dp"
+        android:layout_width="325dp"
+        android:layout_height="348dp"
         android:src="@drawable/logo_transparent"
-        app:layout_constraintBottom_toTopOf="@+id/textView2"
+        app:layout_constraintBottom_toTopOf="@+id/spin_kit"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView" />
+        app:layout_constraintTop_toBottomOf="@+id/textsignup" />
+
 
     <Button
-        android:id="@+id/textView"
-        android:layout_width="272dp"
-        android:layout_height="0dp"
-        android:layout_marginTop="105dp"
-        android:layout_marginBottom="53dp"
+        android:id="@+id/textsignup"
+        android:layout_width="376dp"
+        android:layout_height="59dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="66dp"
+        android:background="@drawable/centre_background"
         android:fontFamily="@font/bangers"
         android:gravity="center"
         android:text="Register"
-        android:background="@drawable/centre_background"
         android:textColor="#2471A3"
         android:textSize="30sp"
         app:layout_constraintBottom_toTopOf="@+id/imageView"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
+
     <Button
-        android:id="@+id/textView2"
-        android:layout_width="248dp"
-        android:layout_height="0dp"
-        android:layout_marginBottom="41dp"
-      android:textColor="#2471A3"
-        android:gravity="center"
+        android:id="@+id/textsignin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="73dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginLeft="16dp"
         android:background="@drawable/centre_background"
-        android:text="Sign Up"
         android:fontFamily="@font/bangers"
+        android:gravity="center"
+        android:text="Sign Up"
+        android:textColor="#2471A3"
         android:textSize="30sp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/textsignup"
+        app:layout_constraintStart_toStartOf="@+id/spin_kit"
+        app:layout_constraintTop_toBottomOf="@+id/spin_kit" />
+
+    <com.github.ybq.android.spinkit.SpinKitView
+        android:id="@+id/spin_kit"
+        style="@style/SpinKitView.Large.Circle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginBottom="50dp"
+
+        app:SpinKit_Color="@android:color/holo_blue_dark"
+        app:SpinKit_Style="Wave"
+        app:layout_constraintBottom_toTopOf="@+id/textsignin"
+        app:layout_constraintEnd_toEndOf="@+id/imageView"
+        app:layout_constraintStart_toStartOf="@+id/imageView"
         app:layout_constraintTop_toBottomOf="@+id/imageView" />
 
 

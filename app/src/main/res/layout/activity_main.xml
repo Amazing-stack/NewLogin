@@ -112,7 +112,8 @@
                 android:layout_height="49dp"
                 android:layout_gravity="center_horizontal"
                 android:layout_marginTop="50dp"
-                android:background="@drawable/centre_background"
+               style="bold"
+                android:background="@drawable/shapebutton"
                 android:text="@string/login_button"
                 android:textColor="@android:color/white"
                 android:textSize="18sp" />
@@ -143,11 +144,12 @@
                     android:background="@color/colorPrimaryDark"
                     android:layout_weight="3"/>
 
-                <ImageView
+                <TextView
+                    android:id="@+id/viewtext"
                     android:layout_width="184dp"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="10dp"
-                    android:src="@drawable/fig"
+                    android:text="Crime Report Point"
                     android:textAlignment="center"
                     android:gravity="center_horizontal" />
 
@@ -165,7 +167,16 @@
                 android:layout_height="wrap_content"
                 android:gravity="center"
                 android:layout_marginTop="20dp">
-
+                <com.github.ybq.android.spinkit.SpinKitView
+                    android:id="@+id/p_Bar"
+                    style="@style/SpinKitView.Large.Circle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_below="@id/viewtext"
+                    app:SpinKit_Color="@android:color/holo_blue_dark"
+                    app:SpinKit_Style="ChasingDots"
+                    />
             </LinearLayout>
 
         </LinearLayout>
@@ -185,5 +196,7 @@
         android:src="@drawable/ic_add_img"
         android:layout_marginRight="11dp"
         android:layout_marginBottom="30dp" />
+
+
     </RelativeLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

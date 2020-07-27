@@ -22,11 +22,10 @@
                 android:layout_height="34dp"
                 android:layout_marginTop="230dp"
                 android:layout_marginBottom="1dp"
-                android:background="#3498DB"
-                android:fontFamily="@font/coustard_black"
-                android:text="  2. Offence"
-                android:textColor="@color/design_default_color_on_primary"
-                android:textSize="18sp" />
+                android:textAppearance="?attr/textAppearanceHeadline6"
+                android:text="  2. Crime"
+                android:textColor="@android:color/black"
+                android:textSize="20dp" />
 
 
         </com.google.android.material.textfield.TextInputLayout>
@@ -34,13 +33,15 @@
         <com.google.android.material.textfield.TextInputLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
-            <TextView
-                android:layout_marginTop="20dp"
-                android:layout_width="match_parent"
-                android:textSize="18dp"
-                android:layout_height="wrap_content"
-                android:text="  Select type of report"/>
 
+
+            <TextView
+                android:textAppearance="?attr/textAppearanceHeadline6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="  Select type of report"
+                android:textSize="18dp" />
 
             <Spinner
                 android:id="@+id/spinner1"
@@ -48,14 +49,8 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="5dp"
                 android:entries="@array/Personnal_crime"
-                android:popupBackground="@drawable/centre_button"
-                android:prompt="@string/select_prompt" />
-
-            <Spinner
-                android:id="@+id/spinner2"
-                android:layout_marginTop="20dp"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content" />
+                android:prompt="@string/select_prompt"
+                />
 
         </com.google.android.material.textfield.TextInputLayout>
         <com.google.android.material.textfield.TextInputLayout
@@ -144,12 +139,7 @@
                 android:inputType="text"
                 android:lines="8" />
         </com.google.android.material.textfield.TextInputLayout>
-        <DatePicker
-            android:id="@+id/datePicker1"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="20dp"
-            android:calendarViewShown="false" />
+
     </LinearLayout>
 
 

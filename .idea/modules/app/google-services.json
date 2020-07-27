@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "893184397623",
+    "firebase_url": "https://newlogin-dcfa8.firebaseio.com",
+    "project_id": "newlogin-dcfa8",
+    "storage_bucket": "newlogin-dcfa8.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:893184397623:android:7d0519cb5166c5d33acab2",
+        "android_client_info": {
+          "package_name": "com.example.newlogin"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "893184397623-k8ku4bgf8n3i0nqcjqbla6svp7a1nmnc.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.newlogin",
+            "certificate_hash": "b399bd3ac93693301a3108564dc618c11885dfe7"
+          }
+        },
+        {
+          "client_id": "893184397623-amc02i748a7qkk3r3l8324jjh470sjio.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyACOKQWmLcmshIOYkLwzfMUBYzLbDKXXsQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "893184397623-amc02i748a7qkk3r3l8324jjh470sjio.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -18,32 +18,30 @@
 
 
         <ImageView
-            android:layout_width="192dp"
-            android:layout_height="109dp"
+            android:layout_width="217dp"
+            android:layout_height="121dp"
             android:layout_gravity="center"
             android:layout_marginTop="10dp"
             android:src="@drawable/gps" />
 
 
-        <androidx.constraintlayout.widget.ConstraintLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="30dp"
-                android:fontFamily="@font/coustard_black"
+                android:layout_marginTop="20dp"
                 android:gravity="center"
-                android:text="CRIME REPORT FORM"
-                android:textSize="18sp"
+                android:text="Crime Report Form"
+                android:textSize="20sp"
+                android:textAppearance="?attr/textAppearanceHeadline6"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent">
 
             </TextView>
-        </androidx.constraintlayout.widget.ConstraintLayout>
+
 
 
 
@@ -52,8 +50,8 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="30dp"
+            android:textAppearance="?attr/textAppearanceHeadline6"
             android:clickable="true"
-            android:fontFamily="@font/coustard_black"
             android:hint="Generate Case ID :">
 
         </TextView>
@@ -69,13 +67,13 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="20dp"
-                android:background="#3498DB"
+                android:background="#5DADE2"
                 android:drawableRight="@drawable/ic_baseline_perm_identity_24"
                 android:elevation="8dp"
-                android:text="  Complainant Personnal Information"
+                android:text=" Complainant Personnal Information"
+                android:textAppearance="?attr/textAppearanceHeadline6"
                 android:textColor="@android:color/white"
-                android:textSize="20dp"
-                app:fontFamily="@font/coustard_black" />
+                android:textSize="20dp" />
 
         </com.google.android.material.textfield.TextInputLayout>
 
@@ -111,6 +109,9 @@
             android:layout_marginTop="20dp"
             android:hint="Phone number"
             app:endIconMode="clear_text"
+            app:endIconTint="@color/colorAccent"
+            app:boxStrokeColor="?attr/colorSecondary"
+            app:hintTextColor="@color/design_default_color_secondary_variant"
             app:errorEnabled="true"
             app:startIconDrawable="@drawable/ic_baseline_phone_24">
 
@@ -119,6 +120,7 @@
                 android:layout_height="wrap_content"
                 android:inputType="phone"
                 android:textColor="@android:color/black"
+                android:textColorHighlight="@color/design_default_color_secondary"
                 android:textColorHint="@android:color/black" />
         </com.google.android.material.textfield.TextInputLayout>
 
@@ -182,12 +184,6 @@
                     android:text="Female" />
             </RadioGroup>
         </com.google.android.material.textfield.TextInputLayout>
-
-        <TextView
-            android:id="@+id/tv"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="0" />
 
 
 
