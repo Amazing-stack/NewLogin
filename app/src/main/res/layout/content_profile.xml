@@ -18,7 +18,7 @@
    <RelativeLayout
        android:layout_width="150dp"
        android:layout_height="150dp"
-       android:layout_marginTop="120dp"
+       android:layout_marginTop="210dp"
        android:layout_gravity="center_horizontal">
 
       <ImageView
@@ -52,7 +52,7 @@
        android:paddingTop="16dp"
        android:paddingBottom="16dp">
 
-      <TextView
+      <EditText
           android:layout_width="wrap_content"
           android:layout_height="wrap_content"
           android:layout_gravity="center_horizontal"
@@ -60,20 +60,20 @@
           android:fontFamily="sans-serif"
           android:elevation="5dp"
           android:letterSpacing="0.1"
-          android:text="Jack Sparrow"
-          android:textColor="@android:color/holo_blue_dark"
+          android:text="Name"
+          android:textColor="@android:color/black"
           android:textSize="18dp"
           android:textStyle="bold" />
 
-      <TextView
+      <EditText
           android:layout_width="wrap_content"
           android:layout_height="wrap_content"
           android:layout_gravity="center_horizontal"
           android:fontFamily="sans-serif"
           android:letterSpacing="0.1"
           android:elevation="5dp"
-          android:text="Actor"
-          android:textColor="@android:color/holo_blue_dark"
+          android:hint="Rank"
+          android:textColor="@android:color/black"
           android:textSize="18dp" />
 
    </LinearLayout>
@@ -99,7 +99,7 @@
              android:layout_width="wrap_content"
              android:layout_height="wrap_content"
              android:paddingLeft="20dp"
-             android:hint="Email"/>
+             android:hint="kwakuiahere@gmail.com"/>
       </LinearLayout>
       <LinearLayout
           android:layout_marginTop="25dp"
@@ -111,14 +111,14 @@
              android:layout_width="36dp"
              android:layout_height="36dp"
              android:src="@drawable/ic_baseline_phone_24"/>
-         <TextView
+         <EditText
              android:textStyle="bold"
 
              android:layout_gravity="center_vertical"
              android:layout_width="wrap_content"
              android:layout_height="wrap_content"
              android:paddingLeft="20dp"
-             android:text="+266 225 225"/>
+             android:hint="+266 225 225"/>
       </LinearLayout>
       <LinearLayout
           android:layout_marginTop="25dp"
@@ -130,14 +130,14 @@
              android:layout_width="36dp"
              android:layout_height="36dp"
              android:src="@drawable/ic_baseline_location_city_24"/>
-         <TextView
+         <EditText
              android:textStyle="bold"
 
              android:layout_gravity="center_vertical"
              android:layout_width="wrap_content"
              android:layout_height="wrap_content"
              android:paddingLeft="20dp"
-             android:text="Kaneshie Police Station"/>
+             android:hint="Kaneshie Police Station"/>
       </LinearLayout>
       <LinearLayout
           android:layout_marginTop="25dp"
@@ -149,14 +149,14 @@
              android:layout_width="36dp"
              android:layout_height="36dp"
              android:src="@drawable/ic_baseline_lock_24"/>
-         <TextView
+         <EditText
              android:textStyle="bold"
 
              android:layout_gravity="center_vertical"
              android:layout_width="wrap_content"
              android:layout_height="wrap_content"
              android:paddingLeft="20dp"
-             android:text="Show all comments"/>
+             android:hint="*****"/>
       </LinearLayout>
    </LinearLayout>
 

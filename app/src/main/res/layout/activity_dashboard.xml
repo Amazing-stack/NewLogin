@@ -128,7 +128,7 @@
                             android:focusable="true"
                             android:foreground="?attr/selectableItemBackground"
                             app:cardCornerRadius="@dimen/card_radius"
-                            app:cardElevation="0dp"
+                            app:cardElevation="5dp"
                             app:cardPreventCornerOverlap="false">
 
                             <LinearLayout
@@ -151,23 +151,13 @@
                                     android:text="Create report"
                                     android:textAppearance="?attr/textAppearanceHeadline6"
                                     android:layout_marginRight="@dimen/normalPadding"
+                                    android:layout_marginBottom="@dimen/normalPadding"
                                     android:textColor="@color/darkTextColor"
                                     android:textSize="16sp" />
 
-                                <TextView
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="wrap_content"
-                                    android:layout_marginLeft="@dimen/normalPadding"
-                                    android:layout_marginTop="@dimen/top_text_subtitle_card"
 
-                                    android:layout_marginRight="@dimen/normalPadding"
-                                    android:layout_marginBottom="@dimen/normalPadding"
 
-                                    android:fontFamily="@font/baloo"
 
-                                    android:text="19 courses"
-                                    android:textColor="#B7B7CC"
-                                    android:textSize="11sp" />
 
 
                             </LinearLayout>
@@ -175,7 +165,7 @@
                         </androidx.cardview.widget.CardView>
 
                         <androidx.cardview.widget.CardView
-
+                            android:id="@+id/view"
                             android:layout_width="0dp"
 
                             android:layout_height="wrap_content"
@@ -183,13 +173,12 @@
                             android:layout_marginLeft="@dimen/horizontal_card"
                             android:layout_marginTop="@dimen/horizontal_card"
                             android:layout_marginBottom="@dimen/horizontal_card"
-
                             android:layout_weight="1"
                             android:clickable="true"
                             android:focusable="true"
                             android:foreground="?attr/selectableItemBackground"
                             app:cardCornerRadius="@dimen/card_radius"
-                            app:cardElevation="0dp">
+                            app:cardElevation="5dp">
 
                             <LinearLayout
                                 android:layout_width="match_parent"
@@ -210,23 +199,12 @@
                                     android:layout_marginTop="@dimen/top_text_card"
                                     android:textAppearance="?attr/textAppearanceHeadline6"
                                     android:layout_marginRight="@dimen/normalPadding"
+                                    android:layout_marginBottom="@dimen/normalPadding"
                                     android:text="View report"
                                     android:textColor="@color/darkTextColor"
                                     android:textSize="16sp" />
 
-                                <TextView
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="wrap_content"
-                                    android:layout_marginLeft="@dimen/normalPadding"
-                                    android:layout_marginTop="@dimen/top_text_subtitle_card"
 
-                                    android:layout_marginRight="@dimen/normalPadding"
-                                    android:layout_marginBottom="@dimen/normalPadding"
-
-                                    android:fontFamily="@font/baloo"
-                                    android:text="21 courses"
-                                    android:textColor="#B7B7CC"
-                                    android:textSize="11sp" />
 
                             </LinearLayout>
 
@@ -256,10 +234,7 @@
                             android:layout_weight="1"
                             android:clickable="true"
                             android:focusable="true"
-
                             android:foreground="?attr/selectableItemBackground"
-
-
                             app:cardCornerRadius="@dimen/card_radius"
                             app:cardElevation="5dp"
                             app:cardPreventCornerOverlap="false">
@@ -283,23 +258,11 @@
                                     android:layout_marginTop="@dimen/top_text_card"
                                     android:textAppearance="?attr/textAppearanceHeadline6"
                                     android:layout_marginRight="@dimen/normalPadding"
+                                    android:layout_marginBottom="@dimen/normalPadding"
                                     android:text="Search "
                                     android:textColor="@color/darkTextColor"
                                     android:textSize="16sp" />
 
-                                <TextView
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="wrap_content"
-                                    android:layout_marginLeft="@dimen/normalPadding"
-                                    android:layout_marginTop="@dimen/top_text_subtitle_card"
-
-                                    android:layout_marginRight="@dimen/normalPadding"
-                                    android:layout_marginBottom="@dimen/normalPadding"
-
-                                    android:fontFamily="@font/baloo"
-                                    android:text="19 courses"
-                                    android:textColor="#B7B7CC"
-                                    android:textSize="11sp" />
 
 
                             </LinearLayout>
@@ -313,14 +276,12 @@
                             android:layout_marginLeft="@dimen/horizontal_card"
                             android:layout_marginTop="15dp"
                             android:layout_marginBottom="@dimen/horizontal_card"
-
-
                             android:layout_weight="1"
                             android:clickable="true"
                             android:focusable="true"
                             android:foreground="?attr/selectableItemBackground"
                             app:cardCornerRadius="@dimen/card_radius"
-                            app:cardElevation="@dimen/card_course_dashboard_elevation">
+                            app:cardElevation="5dp">
 
                             <LinearLayout
                                 android:layout_width="match_parent"
@@ -340,24 +301,12 @@
                                     android:layout_marginLeft="@dimen/normalPadding"
                                     android:layout_marginTop="@dimen/top_text_card"
                                     android:layout_marginRight="@dimen/normalPadding"
+                                    android:layout_marginBottom="@dimen/normalPadding"
                                     android:textAppearance="?attr/textAppearanceHeadline6"
                                     android:text="Manage profile"
                                     android:textColor="@color/darkTextColor"
                                     android:textSize="16sp" />
 
-                                <TextView
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="wrap_content"
-                                    android:layout_marginLeft="@dimen/normalPadding"
-                                    android:layout_marginTop="@dimen/top_text_subtitle_card"
-
-                                    android:layout_marginRight="@dimen/normalPadding"
-                                    android:layout_marginBottom="@dimen/normalPadding"
-
-                                    android:fontFamily="@font/baloo"
-                                    android:text="21 courses"
-                                    android:textColor="#B7B7CC"
-                                    android:textSize="11sp" />
 
                             </LinearLayout>
 
@@ -368,10 +317,11 @@
                     <com.github.ybq.android.spinkit.SpinKitView
                         android:id="@+id/spin_kit"
                         style="@style/SpinKitView.Large.Circle"
-                        android:layout_width="wrap_content"
+                        android:layout_width="64dp"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
                         android:layout_marginTop="20dp"
+                        android:visibility="invisible"
                         android:layout_marginBottom="120dp"
                         app:SpinKit_Color="@android:color/holo_blue_dark"
                         app:SpinKit_Style="ChasingDots">

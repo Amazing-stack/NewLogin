@@ -42,7 +42,7 @@ public class RegisterActivity extends AppCompatActivity implements  View.OnClick
     private ProgressBar pbar;
     FirebaseFirestore fStore;
     String userID;
-    public static final String TAG = "CRM";
+    public static final String TAG = "TAG";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -65,12 +65,12 @@ public class RegisterActivity extends AppCompatActivity implements  View.OnClick
     public void onClick(View v) {
 
 
-        if (mAuth.getCurrentUser() != null) {
-            startActivity(new Intent(getApplicationContext(), MainActivity.class));
-            finish();
-
-
-        }
+//        if (mAuth.getCurrentUser() != null) {
+//            startActivity(new Intent(getApplicationContext(), LoginActivity.class));
+//            finish();
+//
+//
+//        }
         mSignup.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -150,7 +150,7 @@ public class RegisterActivity extends AppCompatActivity implements  View.OnClick
         mSignIn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(RegisterActivity.this,MainActivity.class));
+                startActivity(new Intent(RegisterActivity.this,LoginActivity.class));
             }
 
 

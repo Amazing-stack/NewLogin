@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity"
+    tools:context=".LoginActivity"
     android:background="@android:color/white">
 
 
@@ -173,6 +173,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
+                    android:visibility="invisible"
                     android:layout_below="@id/viewtext"
                     app:SpinKit_Color="@android:color/holo_blue_dark"
                     app:SpinKit_Style="ChasingDots"

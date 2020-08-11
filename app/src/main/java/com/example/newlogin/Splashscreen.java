@@ -46,7 +46,7 @@ Button signup, signin;
        signin.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(Splashscreen.this, MainActivity.class));
+                startActivity(new Intent(Splashscreen.this, LoginActivity.class));
             }
         });
 

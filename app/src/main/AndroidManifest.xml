@@ -7,9 +7,10 @@
 
     <application
         android:allowBackup="true"
-        android:icon="@mipmap/ic_launcher"
+    android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
+        android:usesCleartextTraffic="true"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
@@ -20,30 +21,27 @@
         </activity>
 
         <activity android:name=".Splashscreen" />
-        <activity
-            android:name=".Stationdetails"
-            android:label="@string/title_activity_stationdetails"
-            android:theme="@style/AppTheme.NoActionBar" />
-        <activity android:name=".MainActivity" />
-        <activity
-            android:name=".Offence_formActivity"
-            android:label="@string/title_activity_offence_form"
-            android:theme="@style/AppTheme.NoActionBar" />
-        <activity
-            android:name=".Complainant_form"
-            android:label="@string/title_activity_complainant_form"
-            android:theme="@style/AppTheme.NoActionBar" />
 
+        <activity android:name=".LoginActivity" />
         <activity android:name=".DashboardActivity" />
+        <activity android:name=".ReportDetailActivity" />
         <activity android:name=".ResetPasswordActivity" />
-        <activity android:name=".RegisterActivity" >
-        <intent-filter>
-            <action android:name="android.intent.action.MAIN" />
+        <activity android:name=".Stepper_TabActivity" />
 
-            <category android:name="android.intent.category.LAUNCHER" />
-        </intent-filter>
+
+        <activity android:name=".View_report" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
 
         </activity>
+
+
+
+        <activity android:name=".RegisterActivity"/>
+
         <meta-data
             android:name="preloaded_fonts"
             android:resource="@array/preloaded_fonts" />

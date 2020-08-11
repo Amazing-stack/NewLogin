@@ -5,17 +5,14 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.View;
 import android.widget.Button;
-import android.widget.EditText;
 import android.widget.ProgressBar;
 import android.widget.TextView;
 import android.widget.Toast;
 
 import com.github.ybq.android.spinkit.sprite.Sprite;
 import com.github.ybq.android.spinkit.style.ChasingDots;
-import com.github.ybq.android.spinkit.style.Wave;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 import com.google.android.material.textfield.TextInputEditText;
@@ -23,7 +20,7 @@ import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 
-public class MainActivity extends AppCompatActivity {
+public class LoginActivity extends AppCompatActivity {
 
     private FirebaseAuth mAuth;
     private FirebaseAuth.AuthStateListener mAuthListener;
@@ -38,7 +35,7 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_login);
 
         mSignIn = findViewById(R.id.signin);
         mSignup =  findViewById(R.id.signup);
@@ -53,13 +50,13 @@ public class MainActivity extends AppCompatActivity {
         forp.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(MainActivity.this, ResetPasswordActivity.class));
+                startActivity(new Intent(LoginActivity.this, ResetPasswordActivity.class));
             }
         });
         mSignup.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(MainActivity.this, RegisterActivity.class));
+                startActivity(new Intent(LoginActivity.this, RegisterActivity.class));
             }
         });
 
@@ -71,28 +68,28 @@ public class MainActivity extends AppCompatActivity {
                 String email = mEmail.getText().toString();
                 final String password = mPassword.getText().toString();{
                     if(email.equals("")){
-                        Toast.makeText(MainActivity.this, "Enter Email address!!",
+                        Toast.makeText(LoginActivity.this, "Enter Email address!!",
                                 Toast.LENGTH_SHORT).show();
                     }
                     if(password.equals("")){
-                        Toast.makeText(MainActivity.this, "Enter Password!!",
+                        Toast.makeText(LoginActivity.this, "Enter Password!!",
                                 Toast.LENGTH_SHORT).show();
                     }
 
 
-                        mAuth.createUserWithEmailAndPassword(email,password).addOnCompleteListener(new OnCompleteListener<AuthResult>() {
+                    mAuth.signInWithEmailAndPassword(email, password).addOnCompleteListener(new OnCompleteListener<AuthResult>() {
                             @Override
                             public void onComplete(@NonNull Task<AuthResult> task) {
                                 if (task.isSuccessful()) {
                                     startActivity(new Intent( getApplicationContext() ,DashboardActivity.class));
                                     // Sign in success, update UI with the signed-in user's information
-                                    Toast.makeText(MainActivity.this, "Login successfull.",
+                                    Toast.makeText(LoginActivity.this, "Login successfull.",
                                             Toast.LENGTH_SHORT).show();
 
 
                                 } else {
                                     // If sign in fails, display a message to the user.
-                                    Toast.makeText(MainActivity.this, "Your email is not verified.",
+                                    Toast.makeText(LoginActivity.this, "Your email is not verified.",
                                             Toast.LENGTH_SHORT).show();
 
                                     pbar.setVisibility(View.GONE);

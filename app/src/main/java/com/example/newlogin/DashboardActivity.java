@@ -10,14 +10,12 @@ import android.widget.ProgressBar;
 
 import com.github.ybq.android.spinkit.sprite.Sprite;
 import com.github.ybq.android.spinkit.style.ChasingDots;
-import com.github.ybq.android.spinkit.style.WanderingCubes;
 
-import java.util.List;
 
 public class DashboardActivity extends AppCompatActivity {
-    CardView create, manage;
-    private List<CourseCard> courseCards;
+    CardView create, manage,view_repo;
     ProgressBar progressBar;
+
 
 
     @Override
@@ -26,27 +24,40 @@ public class DashboardActivity extends AppCompatActivity {
         setContentView(R.layout.activity_dashboard);
         create = findViewById(R.id.createreport);
        manage = findViewById(R.id.myprofile);
+        view_repo = findViewById(R.id.view);
        progressBar = findViewById(R.id.spin_kit);
+
 
         Sprite chasingDots = new ChasingDots();
         progressBar.setIndeterminateDrawable(chasingDots);
 
-       progressBar.setVisibility(View.VISIBLE);
+
         create.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(DashboardActivity.this, Complainant_form.class));
+                progressBar.setVisibility(View.VISIBLE);
+                startActivity(new Intent(DashboardActivity.this, Stepper_TabActivity.class));
                 progressBar.setVisibility(View.GONE);
             }
         });
 
 
 
-        progressBar.setVisibility(View.VISIBLE);
+
        manage.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                progressBar.setVisibility(View.VISIBLE);
                 startActivity(new Intent(DashboardActivity.this, MyprofileActivity.class));
+                progressBar.setVisibility(View.GONE);
+            }
+        });
+
+        view_repo.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                progressBar.setVisibility(View.VISIBLE);
+                startActivity(new Intent(DashboardActivity.this, View_report.class));
                 progressBar.setVisibility(View.GONE);
             }
         });
